@@ -1,0 +1,308 @@
+@import url(../css/fonts.css);
+@import url(../css/normalize.css);
+@import url(../css/reset.css);
+@import url(../css/responsive.css);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+h2 {
+  font-family: "ChelseaMarket";
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: "Terminal Dosis-Book";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: #a7a49c;
+}
+
+.container {
+  max-width: 1474px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 0 258px;
+}
+
+.header {
+  width: 100%;
+  min-height: 79px;
+  background-color: #f9572d;
+}
+
+.header__content, .header__content-right, .header__content-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__content {
+  padding-top: 20px;
+}
+
+.header__content {
+  position: relative;
+}
+
+.header__content h2 {
+  margin-left: 6px;
+  margin-right: 18px;
+}
+
+.header__content span {
+  margin-top: 5px;
+  font-family: "Telegrafico";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+}
+
+.header__menu {
+  margin-right: 15px;
+  font-family: "Telegrafico";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header__menu ul li {
+  display: inline-block;
+}
+
+.header__menu a {
+  color: #ffffff;
+}
+
+.header__menu li:hover a {
+  color: greenyellow;
+}
+
+.header__menu li + li {
+  margin-left: 15px;
+}
+
+#toogle__btn {
+  display: none;
+}
+
+#toogle__menu {
+  display: none;
+  position: absolute;
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+  height: 290px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  font-family: "Terminal Dosis-Book";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#toogle__menu li {
+  padding: 2px 10px;
+}
+
+#toogle__menu li:hover {
+  border-radius: 20px;
+  background-color: #f54922;
+}
+
+#toogle__menu li:hover a {
+  color: #fff;
+}
+
+#toogle__menu a {
+  color: #7d7253;
+}
+
+.header__content-right img {
+  padding: 9px 9px 11px 9px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: inset 0 6px 5px -5px #fe804d;
+}
+
+#shoppingCart__btn {
+  background-color: #f4552e;
+}
+
+.header__hover-block {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 265px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  z-index: 5;
+}
+
+.arrow-top {
+  z-index: 10;
+}
+
+.arrow-top::after {
+  content: '';
+  top: -5px;
+  right: 5px;
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  border: 0;
+}
+
+.arrow-top::after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #892d17;
+}
+
+.main__menu {
+  display: flex;
+  align-items: center;
+  min-height: 66px;
+  background-color: #f6edcf;
+}
+
+.main__menu-inner {
+  display: flex;
+  align-items: center;
+}
+
+.main__menu-inner ul, .main__menu-inner li {
+  display: inline-block;
+}
+
+.main__menu-inner ul {
+  font-family: "Terminal Dosis-Book";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+}
+
+.main__menu-inner li {
+  padding: 2px 10px;
+}
+
+.main__menu-inner li:hover {
+  border-radius: 20px;
+  background-color: #f54922;
+}
+
+.main__menu-inner li:hover a {
+  color: #fff;
+}
+
+.main__menu-inner li + li {
+  margin-left: 10px;
+}
+
+.main__menu-inner a {
+  color: #7d7253;
+}
+
+.home__logo {
+  margin-right: 3px;
+}
+
+.search__bar {
+  min-height: 60px;
+  background-color: #f9f9f9;
+}
+
+.search__bar-inner {
+  min-height: 60px;
+}
+
+.search__bar-inner, .bar__content-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sprite ul, .sprite li {
+  display: inline-block;
+}
+
+.sprite ul {
+  margin-right: 10px;
+  font-size: 0;
+}
+
+.sprite li {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/sprite/spritesheet.png);
+}
+
+.fa-rss {
+  background-position: -15px 0;
+}
+
+.fa-fb {
+  background-position: 2 0;
+}
+
+.fa-tw {
+  background-position: 20px 0;
+}
+
+.fa-skype {
+  background-position: 45px 0;
+}
+
+#money__list, .bar__content-right input {
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.13);
+}
+
+#money__list {
+  width: 135px;
+  margin-right: 15px;
+  font-family: "Terminal Dosis", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #4c4c4c;
+}
+
+.bar__content-right input {
+  font-family: "Terminal Dosis", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #4c4c4c;
+  width: 185px;
+  background: url("../img/searh_icon.png");
+  background-repeat: no-repeat;
+  background-position: 160px;
+}

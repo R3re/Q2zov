@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "ChelseaMarket";
+    src: url("../fonts/ChelseaMarket-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Telegrafico";
+    src: url("../fonts/Telegrafico.ttf");
+}
+
+@font-face {
+    font-family: "Terminal Dosis";
+    src: url("../fonts/Terminal Dosis-Medium.ttf");
+    src: url("../fonts/Terminal Dosis-Light.ttf");
+}
+
+@font-face {
+    font-family: "Terminal Dosis-Book";
+    src: url("../fonts/Terminal Dosis-Book.ttf");
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon/icomoon.eot');
+    src:  url('fonts/icomoon/icomoon.eot') format('embedded-opentype'),
+    url('fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('fonts/icomoon/icomoon.woff') format('woff'),
+    url('fonts/icomoon/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\e986";
+}
