@@ -31,7 +31,6 @@ h3 {
   font-weight: 400;
   font-style: italic;
   color: #a7a49c;
-  cursor: default;
 }
 
 .container {
@@ -113,7 +112,7 @@ h3 {
   text-align: center;
   padding: 40px;
   width: 100%;
-  height: 290px;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   margin: 0 auto;
   font-family: "Terminal Dosis-Book";
@@ -123,6 +122,7 @@ h3 {
 
 #toogle__menu li {
   padding: 2px 10px;
+  margin-bottom: 10px;
 }
 
 #toogle__menu li:hover {
@@ -135,7 +135,7 @@ h3 {
 }
 
 #toogle__menu a {
-  color: #7d7253;
+  color: #fff;
 }
 
 .header__content-right img {
@@ -196,39 +196,81 @@ h3 {
 .main__menu-inner {
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 66px;
 }
 
-.main__menu-inner ul, .main__menu-inner li {
-  display: inline-block;
-}
-
-.main__menu-inner ul {
+#menu {
+  display: flex;
+  align-items: center;
   font-family: "Terminal Dosis-Book";
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.48px;
+  height: 66px;
 }
 
-.main__menu-inner li {
+#menu li {
+  display: flex;
+  align-items: center;
+  height: inherit;
   padding: 2px 10px;
 }
 
-.main__menu-inner li:hover {
-  border-radius: 20px;
-  background-color: #f54922;
+#menu li:hover {
+  background-color: #fbf2d3;
+  background-image: linear-gradient(to top, #fbf2d3 0%, #f0e4b8 99%, #f0e4b8 100%);
 }
 
-.main__menu-inner li:hover a {
-  color: #fff;
+#menu li + li {
+  margin-left: 5px;
 }
 
-.main__menu-inner li + li {
-  margin-left: 10px;
-}
-
-.main__menu-inner a {
+#menu a {
+  display: inline-block;
   color: #7d7253;
+}
+
+#menu li:nth-child(2) {
+  position: relative;
+}
+
+#menu li:nth-child(2):hover #sub__menu {
+  display: block;
+}
+
+#sub__menu {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 65px;
+  left: 0px;
+  background-color: #fbf2d3;
+}
+
+#sub__menu li {
+  padding: 4px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#sub__menu li:hover {
+  background-color: #f54922;
+  border-radius: 10px;
+  background-image: none;
+}
+
+#sub__menu li + li {
+  margin-left: 0px !important;
+  margin-bottom: 10px;
+}
+
+#sub__menu a {
+  width: 100%;
+}
+
+#sub__menu a:hover {
+  color: #fff;
 }
 
 .home__logo {
@@ -271,7 +313,7 @@ h3 {
 }
 
 .fa-fb {
-  background-position: 2px 0;
+  background-position: 2 0;
 }
 
 .fa-tw {

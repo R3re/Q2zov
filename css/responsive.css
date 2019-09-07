@@ -187,6 +187,9 @@
         font-size: 12px;
     }
 
+    .toogle__menu {
+        height: 100vh;
+    }
     #toogle__btn {
         display: block;
     }
@@ -236,13 +239,22 @@
         padding-top: 15px;
     }
 
-    .header__content img {
+    .header__logo {
         width: 28px;
         height: 38px;
     }
 
     .header__content span {
         font-size: 12px;
+    }
+
+    .shoppingCart__logo img {
+        padding: 6px;
+    }
+
+    .header__hover-block {
+        top: 30px;
+        right: 142px;
     }
 
     .header__menu {

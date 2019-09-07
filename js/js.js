@@ -1,3 +1,12 @@
+$('.shoppingCart__logo').hover(function() {
+    $('.header__hover-block').show("slow");
+});
+
+$('.header__hover-block').hover(function() {
+    $('.header__hover-block').hide("slow");
+});
+
+
 $("#toogle__btn").click(function() {
     $('#toogle__menu').toggle();
 });
@@ -7,12 +16,3 @@ $(document).on('click', function(e) {
     }
     e.stopPropagation();
 });
-
-// $( document ).ready(function(){
-//     $(".nav__btn").click(function() { // Тут класс твоей кнопки
-//         $('.nav__menu__cont').toggle(300);  // Тут класс твоего меню, предварительно оно "display:none"
-//     });
-//     $(".menu__close__img").click(function() { // Тут класс твоей кнопки
-//         $('.nav__menu__cont').toggle(500);  // Тут класс твоего меню, предварительно оно "display:none"
-//     });
-// });
